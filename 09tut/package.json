@@ -1,7 +1,7 @@
 {
-  "name": "08tut",
+  "name": "09tut",
   "version": "1.0.0",
-  "description": "Express Tutorial: Middleware",
+  "description": "Express Tutorial: MVC REST API",
   "main": "server.js",
   "scripts": {
     "start": "node server",
