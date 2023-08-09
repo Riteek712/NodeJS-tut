@@ -10,8 +10,8 @@ app.get('/', (req, res) =>{
     res.sendFile('./views/index.html', {root: __dirname})
     // res.sendFile(path.join(__dirname, 'views', 'index.html'));
 })
-// Express handels thes requests like a waterfall. So in the d=end you can put a default.
-// If the get request contains ^/ that means it must begin with /, similarly if $ is used it means it must end with it. | is to insert an OR operator. 
+// Express handels these requests like a waterfall. So in the end you can put a default.
+// If you get request contains ^/ that means it must begin with /, similarly if $ is used it means it must end with it. | is to insert an OR operator. 
 app.get('/new-page(.html)?', (req, res) =>{
     // (.html)? means that we dont need to mention .html in the URL.
     res.sendFile('./views/new-page.html', {root: __dirname})
