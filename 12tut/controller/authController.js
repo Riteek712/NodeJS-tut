@@ -26,9 +26,9 @@ const handleLogin = async (req, res) => {
     // create JWTs
     const accessToken = jwt.sign(
       {
-        UserInfo: {
-          username: foundUser.username,
-          roles: roles,
+        "UserInfo": {
+          "username": foundUser.username,
+          "roles": roles,
         },
       },
       process.env.ACCESS_TOKEN_SECRET,
@@ -36,7 +36,7 @@ const handleLogin = async (req, res) => {
     );
     // A refresh-token in only there to veryfy that you can get a new access token.
     const refreshToken = jwt.sign(
-      { username: foundUser.username },
+      { "username": foundUser.username },
       process.env.REFRESH_TOKEN_SECRET,
       { expiresIn: "1d" }
     );
