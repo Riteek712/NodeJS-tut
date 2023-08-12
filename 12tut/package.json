@@ -1,7 +1,7 @@
 {
-  "name": "10tut",
+  "name": "12tut",
   "version": "1.0.0",
-  "description": "Express Tutorial: Authentication",
+  "description": "Express Tutorial: User Roles / Authorization",
   "main": "server.js",
   "scripts": {
     "start": "node server",
